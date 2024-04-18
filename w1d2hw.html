@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Day 2 Homework</title>
+</head>
+
+<body>
+
+    <form action="/submit" method="POST">
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" autocomplete="on" placeholder="chris@chris.com" required>
+        <div role="alert" aria-live="assertive"></div>
+
+        <button type="submit"><a href='/submitsuccesful.html'>Submit</a></button><br><br><br>
+
+        <label for="number">Number: </label>
+        <input type="number" name='quantity' min="0" max="100" step="10" autocomplete="on"><br><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" name="date"><br><br><br>
+
+        <label for="quantity">Quantity: </label>
+        <input type="number" name='quantity' min="0" max="100" step="10" autocomplete="on"><br><br><br>
+
+        <label for="colorpicker">Pick a color:</label>
+        <input type="color" id="colorpicker" name="colorpicker" value="#ff0000" placeholder="Select a color"><br><br><br>
+
+        <label for="programinglanguage"><strong>Choose which vehicle you would like</strong></label>
+            <select name="programinglanguage" id="programinglanguage" aria-label="Choose which language you prefer.">
+                <option value="Programming Languages">Choose option</option>
+                <option value="Python">Python</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">Java</option>
+            </select>
+
+        <h4>What level expertise.</h4>
+        <input type="radio" id="beginner" name="expertise" value="beginner">
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="intermediate" name="expertise" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" id="expert" name="expertise" value="expert">
+        <label for="expert">Expert</label>
+        <div role="alert" aria-live="assertive"></div><br><br><br>  
+
+        <label for="subscribe">Choose your platform</label>
+        <br>
+        <input type="checkbox" id ="web" name="platform" value="yes">
+        <label for="web">Web</label>
+        <input type="checkbox" id ="mobile" name="platform" value="yes">
+        <label for="mobile">Mobile</label>
+        <input type="checkbox" id ="desktop" name="platform" value="yes">
+        <label for="desktop">Desktop</label>
+        <div role="alert" aria-live="assertive"></div>
+
+
+    </form>
+
+
+</body>
+
+</html>
